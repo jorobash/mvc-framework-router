@@ -17,12 +17,12 @@ spl_autoload_register(function($className){
 $router = new Router();
 
 // Add the routes
-//$router->add('', ['controller' => 'Home', 'action' => 'index']);
-//$router->add('posts', ['controller' => 'Posts', 'action' => 'index']);
-//$router->add('{controller}/{action}');
-//$router->add('{controller}/{id:\d+}/{action}');
-//$router->add('{controller}/{action}/{id:\d+}');
-//$router->add('{controller}/{action}/{name:\w+}');
+$router->add('', ['controller' => 'Home', 'action' => 'index']);
+$router->add('posts', ['controller' => 'Posts', 'action' => 'index']);
+$router->add('{controller}/{action}');
+$router->add('{controller}/{id:\d+}/{action}');
+$router->add('{controller}/{action}/{id:\d+}');
+$router->add('{controller}/{action}/{name:\w+}');
 $router->add('admin/{controller}/{action}', ['namespace' => 'Admin']);
 
 // Match the requested route

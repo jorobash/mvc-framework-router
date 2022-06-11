@@ -2,12 +2,13 @@
 namespace App\Controllers;
 
 use Core\Controller;
+use Core\View;
 
 class Home extends Controller
 {
     public function indexAction()
     {
-        echo "Hello from index action home controller";
+        View::render('Home/index.php');
     }
 
     public function before()
